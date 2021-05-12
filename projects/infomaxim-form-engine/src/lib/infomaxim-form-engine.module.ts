@@ -2,7 +2,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { CommonModule } from '@angular/common'; 
 import { NgModule } from '@angular/core';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-import { InfomaximFormBuilderComponent } from './infomaxim-form-builder.component';
+import { InfomaximFormEngineComponent } from './infomaxim-form-engine.component';
 import { FormBuilderComponent } from './form-builder/form-builder.component';
 import { FieldBuilderComponent } from './field-builder/field-builder.component';
 import { TextboxComponent } from './fields/textbox/textbox.component';
@@ -21,7 +21,7 @@ import { ContentComponent } from './fields/content/content.component';
 
 @NgModule({
   declarations: [
-    InfomaximFormBuilderComponent,
+    InfomaximFormEngineComponent,
     FormBuilderComponent,
     FieldBuilderComponent,
     TextboxComponent,
@@ -45,7 +45,7 @@ import { ContentComponent } from './fields/content/content.component';
     ReactiveFormsModule,
   ],
   exports: [
-    InfomaximFormBuilderComponent,
+    InfomaximFormEngineComponent,
     FormBuilderComponent,
     FieldBuilderComponent,
     TextboxComponent,

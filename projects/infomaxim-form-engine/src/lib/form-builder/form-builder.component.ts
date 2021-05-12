@@ -2,7 +2,7 @@ import { Component, OnInit, Input, Output, EventEmitter, ViewChild } from '@angu
 import { NgForm, FormControl, FormGroup, ValidationErrors, Validators } from '@angular/forms';
 
 @Component({
-  selector: 'lib-form-builder',
+  selector: 'lib-form-engine',
   templateUrl: './form-builder.component.html',
   styleUrls: ['./form-builder.component.scss']
 })

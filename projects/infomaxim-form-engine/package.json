@@ -1,5 +1,5 @@
 {
-  "name": "@andyf008/infomaxim6-form-engine",
+  "name": "infomaxim-form-engine",
   "version": "1.0.0",
   "description": "Reactive Form Engine For Angular Using Bootstrap UI Framework and Infomaxim Form API",
   "repository": {

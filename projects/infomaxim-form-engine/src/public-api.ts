@@ -1,10 +1,10 @@
 /*
- * Public API Surface of infomaxim-form-builder
+ * Public API Surface of infomaxim-form-engine
  */
 
-export * from './lib/infomaxim-form-builder.service';
-export * from './lib/infomaxim-form-builder.component';
-export * from './lib/infomaxim-form-builder.module';
+export * from './lib/infomaxim-form-engine.service';
+export * from './lib/infomaxim-form-engine.component';
+export * from './lib/infomaxim-form-engine.module';
 
 export * from './lib/form-builder/form-builder.component';
 export * from './lib/field-builder/field-builder.component';

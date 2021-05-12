@@ -8,12 +8,12 @@ Based on ReactiveFormsModule from @angular/forms. Available custom and all angul
 
 Install npm package into your Angular application
 ```bash
-$ npm install infomaxim-form-builder --save
+$ npm install infomaxim-form-engine --save
 ```
 
 Once installed you need to import the main module
 ```typescript
-import { InfomaximFormBuilderModule } from 'infomaxim-form-builder';
+import { InfomaximFormBuilderModule } from 'infomaxim-form-engine';
 
 @NgModule({
     imports: [
@@ -86,17 +86,17 @@ receiveData(data: any) {                              // Received function calle
 
 Snippet below will generate form fields
 ```html
-<infomaxim-form-builder [formConfig]="formConfig" (formData)="receiveData($event)"></infomaxim-form-builder>
+<infomaxim-form-engine [formConfig]="formConfig" (formData)="receiveData($event)"></infomaxim-form-engine>
 ```
 
 ### Form
 
-![Form](https://github.com/arjunkhetia/Angular-Bootstrap-Form-Builder/blob/master/src/assets/form.png?raw=true)
+![Form](https://github.com/arjunkhetia/Angular-Bootstrap-form-engine/blob/master/src/assets/form.png?raw=true)
 
 ### Validation Error Form
 
-![Error Form](https://github.com/arjunkhetia/Angular-Bootstrap-Form-Builder/blob/master/src/assets/errorform.png?raw=true)
+![Error Form](https://github.com/arjunkhetia/Angular-Bootstrap-form-engine/blob/master/src/assets/errorform.png?raw=true)
 
 ### Filled Form
 
-![Filled Form](https://github.com/arjunkhetia/Angular-Bootstrap-Form-Builder/blob/master/src/assets/filledform.png?raw=true)
+![Filled Form](https://github.com/arjunkhetia/Angular-Bootstrap-form-engine/blob/master/src/assets/filledform.png?raw=true)

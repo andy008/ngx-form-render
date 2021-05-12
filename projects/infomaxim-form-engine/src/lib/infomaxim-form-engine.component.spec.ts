@@ -1,20 +1,20 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { InfomaximFormBuilderComponent } from './infomaxim-form-builder.component';
+import { InfomaximFormEngineComponent } from './infomaxim-form-engine.component';
 
-describe('InfomaximFormBuilderComponent', () => {
-  let component: InfomaximFormBuilderComponent;
-  let fixture: ComponentFixture<InfomaximFormBuilderComponent>;
+describe('InfomaximFormEngineComponent', () => {
+  let component: InfomaximFormEngineComponent;
+  let fixture: ComponentFixture<InfomaximFormEngineComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ InfomaximFormBuilderComponent ]
+      declarations: [ InfomaximFormEngineComponent ]
     })
     .compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(InfomaximFormBuilderComponent);
+    fixture = TestBed.createComponent(InfomaximFormEngineComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

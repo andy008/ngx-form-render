@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "Infomaxim-Form-Engine": {
+    "infomaxim-form-engine": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -17,7 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/Infomaxim-Form-Engine-Example",
+            "outputPath": "dist/Infomaxim-Form-engine-example",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -71,18 +71,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "Angular-Bootstrap-Form-Builder:build"
+            "browserTarget": "infomaxim-form-engine:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "Angular-Bootstrap-Form-Builder:build:production"
+              "browserTarget": "infomaxim-form-engine:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "Angular-Bootstrap-Form-Builder:build"
+            "browserTarget": "infomaxim-form-engine:build"
           }
         },
         "test": {
@@ -119,48 +119,48 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "Angular-Bootstrap-Form-Builder:serve"
+            "devServerTarget": "infomaxim-form-engine:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "Angular-Bootstrap-Form-Builder:serve:production"
+              "devServerTarget": "infomaxim-form-engine:serve:production"
             }
           }
         }
       }
     },
-    "infomaxim-form-builder": {
+    "infomaxim6-form-engine": {
       "projectType": "library",
-      "root": "projects/infomaxim-form-builder",
-      "sourceRoot": "projects/infomaxim-form-builder/src",
+      "root": "projects/infomaxim-form-engine",
+      "sourceRoot": "projects/infomaxim-form-engine/src",
       "prefix": "lib",
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-angular:ng-packagr",
           "options": {
-            "tsConfig": "projects/infomaxim-form-builder/tsconfig.lib.json",
-            "project": "projects/infomaxim-form-builder/ng-package.json"
+            "tsConfig": "projects/infomaxim-form-engine/tsconfig.lib.json",
+            "project": "projects/infomaxim-form-engine/ng-package.json"
           },
           "configurations": {
             "production": {
-              "tsConfig": "projects/infomaxim-form-builder/tsconfig.lib.prod.json"
+              "tsConfig": "projects/infomaxim-form-engine/tsconfig.lib.prod.json"
             }
           }
         },
         "test": {
           "builder": "@angular-devkit/build-angular:karma",
           "options": {
-            "main": "projects/infomaxim-form-builder/src/test.ts",
-            "tsConfig": "projects/infomaxim-form-builder/tsconfig.spec.json",
-            "karmaConfig": "projects/infomaxim-form-builder/karma.conf.js"
+            "main": "projects/infomaxim-form-engine/src/test.ts",
+            "tsConfig": "projects/infomaxim-form-engine/tsconfig.spec.json",
+            "karmaConfig": "projects/infomaxim-form-engine/karma.conf.js"
           }
         },
         "lint": {
           "builder": "@angular-devkit/build-angular:tslint",
           "options": {
             "tsConfig": [
-              "projects/infomaxim-form-builder/tsconfig.lib.json",
-              "projects/infomaxim-form-builder/tsconfig.spec.json"
+              "projects/infomaxim-form-engine/tsconfig.lib.json",
+              "projects/infomaxim-form-engine/tsconfig.spec.json"
             ],
             "exclude": [
               "**/node_modules/**"
@@ -170,7 +170,7 @@
       }
     }
   },
-  "defaultProject": "Angular-Bootstrap-Form-Builder",
+  "defaultProject": "infomaxim-form-engine",
   "cli": {
     "analytics": "5756a65a-a166-44fa-9e41-1060ba4f8a49"
   }
