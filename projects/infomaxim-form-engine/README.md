@@ -1,6 +1,6 @@
-# Angular Bootstrap Form Builder (EmanciTech)
+# Infomaxim Form Engine (netAmbition)
 
-The library is developed by [EmanciTech](https://www.emancitech.com/) to provides Angular components that help developers to quickly generate Bootstrap Reactive Form from JavaScript object. Component supports validators, help messages and error messages.
+Provides Angular components that help developers to quickly generate Bootstrap Reactive Form from JavaScript object. Component supports validators, help messages and error messages.
 
 Based on ReactiveFormsModule from @angular/forms. Available custom and all angular built-in form elements. Automatically create full customised form with simple javascript object configuration. Also support some of the CSS styling for form attributes.
 

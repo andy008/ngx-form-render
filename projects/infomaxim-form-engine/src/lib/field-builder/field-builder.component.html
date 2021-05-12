@@ -1,9 +1,9 @@
-<div class="form-group row" [formGroup]="form">
+<div class="form-group form-row" [formGroup]="form">
     <label class="col-md-3 form-control-label" [attr.for]="field.label">
         {{field.label}}
         <strong class="text-danger" *ngIf="field.required">*</strong>
     </label>
-    <div class="col-md-9" [ngSwitch]="field.type">
+    <div class="col-md-12" [ngSwitch]="field.type">
         <lib-textbox *ngSwitchCase="'text'" [field]="field" [form]="form"></lib-textbox>
         <lib-textbox *ngSwitchCase="'email'" [field]="field" [form]="form"></lib-textbox>
         <lib-textbox *ngSwitchCase="'password'" [field]="field" [form]="form"></lib-textbox>
