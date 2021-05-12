@@ -2,5 +2,8 @@
     <h1 *ngSwitchCase="'h1'" [class]="class">{{content}}</h1>
     <h2 *ngSwitchCase="'h2'" [class]="class">{{content}}</h2>
     <h3 *ngSwitchCase="'h3'" [class]="class">{{content}}</h3>
-    <h4 *ngSwitchCase="'h4'" [class]="class">{{content}}</h4>
+    <ng-container *ngSwitchCase="'h4'"> 
+        <p></p>
+        <h4  [class]="class">{{content}}</h4>
+    </ng-container>
 </ng-component>
