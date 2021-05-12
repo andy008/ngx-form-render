@@ -13,8 +13,12 @@
 
 <ng-template #formBuilder>
     <form class="form-horizontal" [formGroup]="form" #formDirective="ngForm">
-        <div *ngFor="let field of fields">
-            <lib-field-builder [form]="form" [field]="field"></lib-field-builder>
+        <div *ngFor="let column of columns" [class]="column.class">
+            <div *ngFor="let section of sections" [class]="section.class">
+                <div *ngFor="let field of fields">
+                    <lib-field-builder [form]="form" [field]="field"></lib-field-builder>
+                </div>
+            </div>
         </div>
         <div class="form-row"></div>
         <div class="form-group row">

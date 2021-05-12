@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'lib-heading',
@@ -6,6 +6,10 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./heading.component.scss']
 })
 export class HeadingComponent implements OnInit {
+
+  @Input() htag: string = '';
+  @Input() class: string = '';
+  @Input() content: string = '';
 
   constructor() { }
 
