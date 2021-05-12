@@ -6,7 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'Angular Bootstrap Form Builder';
+  title = 'Infomaxim Form Builder';
   public formConfig: any = {
     title: "Sample Form",
     controls: {

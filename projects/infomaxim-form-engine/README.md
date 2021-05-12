@@ -91,12 +91,12 @@ Snippet below will generate form fields
 
 ### Form
 
-![Form](https://github.com/arjunkhetia/Angular-Bootstrap-Form-Builder/blob/master/src/assets/form.png "Form")
+![Form](https://github.com/arjunkhetia/Angular-Bootstrap-Form-Builder/blob/master/src/assets/form.png?raw=true)
 
 ### Validation Error Form
 
-![Error Form](https://github.com/arjunkhetia/Angular-Bootstrap-Form-Builder/blob/master/src/assets/errorform.png "Error Form")
+![Error Form](https://github.com/arjunkhetia/Angular-Bootstrap-Form-Builder/blob/master/src/assets/errorform.png?raw=true)
 
 ### Filled Form
 
-![Filled Form](https://github.com/arjunkhetia/Angular-Bootstrap-Form-Builder/blob/master/src/assets/filledform.png "Filled Form")
+![Filled Form](https://github.com/arjunkhetia/Angular-Bootstrap-Form-Builder/blob/master/src/assets/filledform.png?raw=true)

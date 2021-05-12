@@ -16,9 +16,9 @@
       "dom"
     ],
     "paths": {
-      "ng-bs-form-builder": [
-        "dist/ng-bs-form-builder/ng-bs-form-builder",
-        "dist/ng-bs-form-builder"
+      "infomaxim-form-builder": [
+        "dist/infomaxim-form-builder/infomaxim-form-builder",
+        "dist/infomaxim-form-builder"
       ]
     }
   }

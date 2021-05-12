@@ -1,0 +1,23 @@
+{
+  "name": "infomaxim6-form-engine",
+  "version": "1.0.0",
+  "description": "Reactive Form Engine For Angular Using Bootstrap UI Framework and Infomaxim Form API",
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "author": "arjunkhetia <arjunkhetia@gmail.com>",
+  "peerDependencies": {
+    "@angular/common": "^10.2.0",
+    "@angular/core": "^10.2.0"
+  },
+  "dependencies": {
+    "tslib": "^2.0.0"
+  },
+  "bugs": {
+    "url": ""
+  },
+  "keywords": [
+    "Infomaxim Form Engine"
+  ]
+}

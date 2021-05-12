@@ -1,7 +1,7 @@
 {
-  "name": "angular-bootstrap-form-builder",
+  "name": "infomaxim6-form-engine-project",
   "version": "1.0.0",
-  "description": "Reactive Form Builder For Angular Using Bootstrap UI Framework",
+  "description": "Reactive Form Engine For Angular Using Bootstrap UI Framework and Infomaxim Form API",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
@@ -12,9 +12,9 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/arjunkhetia/Angular-Bootstrap-Form-Builder.git"
+    "url": ""
   },
-  "author": "arjunkhetia <arjunkhetia@gmail.com>",
+  "author": "Andy Farrell <andy@infomaxim.com> (www.infomaxim.com)",
   "private": false,
   "dependencies": {
     "@angular/animations": "~10.2.0",
@@ -58,12 +58,9 @@
     "typescript": "~4.0.2"
   },
   "bugs": {
-    "url": "https://github.com/arjunkhetia/Angular-Bootstrap-Form-Builder/issues"
+    "url": ""
   },
   "keywords": [
-    "Form Builder",
-    "Reactive Form Builder",
-    "Angular Form Builder",
-    "Bootstrap Form Builder"
+    "Infomaxim Form Engine"
   ]
 }

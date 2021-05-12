@@ -129,38 +129,38 @@
         }
       }
     },
-    "ng-bs-form-builder": {
+    "infomaxim-form-builder": {
       "projectType": "library",
-      "root": "projects/ng-bs-form-builder",
-      "sourceRoot": "projects/ng-bs-form-builder/src",
+      "root": "projects/infomaxim-form-builder",
+      "sourceRoot": "projects/infomaxim-form-builder/src",
       "prefix": "lib",
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-angular:ng-packagr",
           "options": {
-            "tsConfig": "projects/ng-bs-form-builder/tsconfig.lib.json",
-            "project": "projects/ng-bs-form-builder/ng-package.json"
+            "tsConfig": "projects/infomaxim-form-builder/tsconfig.lib.json",
+            "project": "projects/infomaxim-form-builder/ng-package.json"
           },
           "configurations": {
             "production": {
-              "tsConfig": "projects/ng-bs-form-builder/tsconfig.lib.prod.json"
+              "tsConfig": "projects/infomaxim-form-builder/tsconfig.lib.prod.json"
             }
           }
         },
         "test": {
           "builder": "@angular-devkit/build-angular:karma",
           "options": {
-            "main": "projects/ng-bs-form-builder/src/test.ts",
-            "tsConfig": "projects/ng-bs-form-builder/tsconfig.spec.json",
-            "karmaConfig": "projects/ng-bs-form-builder/karma.conf.js"
+            "main": "projects/infomaxim-form-builder/src/test.ts",
+            "tsConfig": "projects/infomaxim-form-builder/tsconfig.spec.json",
+            "karmaConfig": "projects/infomaxim-form-builder/karma.conf.js"
           }
         },
         "lint": {
           "builder": "@angular-devkit/build-angular:tslint",
           "options": {
             "tsConfig": [
-              "projects/ng-bs-form-builder/tsconfig.lib.json",
-              "projects/ng-bs-form-builder/tsconfig.spec.json"
+              "projects/infomaxim-form-builder/tsconfig.lib.json",
+              "projects/infomaxim-form-builder/tsconfig.spec.json"
             ],
             "exclude": [
               "**/node_modules/**"
