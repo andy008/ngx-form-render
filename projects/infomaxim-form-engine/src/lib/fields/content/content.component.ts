@@ -7,8 +7,7 @@ import { Component, OnInit, Input } from '@angular/core';
 })
 export class ContentComponent implements OnInit {
 
-  @Input() content: string = '';
-  @Input() class: string = '';
+  @Input() field: any = {};
 
   constructor() { }
 

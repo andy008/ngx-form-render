@@ -18,9 +18,17 @@
     "Infomaxim Form Engine"
   ],
   "main": "karma.conf.js",
-  "devDependencies": {},
+  "devDependencies": {
+    "ng-packagr": "^11.2.4"
+  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "ng": "ng",
+    "start": "ng serve",
+    "build": "ng build",
+    "test": "ng test",
+    "lint": "ng lint",
+    "e2e": "ng e2e",
+    "packagr": "ng-packagr -p ng-package.json"
   },
   "license": "ISC"
 }

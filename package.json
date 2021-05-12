@@ -17,6 +17,7 @@
   "author": "Andy Farrell <andy@infomaxim.com> (www.infomaxim.com)",
   "private": false,
   "dependencies": {
+    "@andyf008/infomaxim6-form-engine": "file:projects/infomaxim-form-engine",
     "@angular/animations": "~10.2.0",
     "@angular/common": "~10.2.0",
     "@angular/compiler": "~10.2.0",

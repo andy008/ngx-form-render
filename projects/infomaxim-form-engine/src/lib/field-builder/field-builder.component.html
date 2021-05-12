@@ -18,7 +18,7 @@
         <lib-datetime *ngSwitchCase="'datetime'" [field]="field" [form]="form"></lib-datetime>
         <lib-file *ngSwitchCase="'file'" [field]="field" [form]="form"></lib-file>
         <!-- Added Fields for Infomaxim -->
-        <lib-content *ngSwitchCase="'content'" [content]="content" [class]="class"></lib-content>
-        <lib-heading *ngSwitchCase="'heading'" [class]="class" [htag]="htag" [content]="content"></lib-heading>
+        <lib-content *ngSwitchCase="'content'" [field]="field"></lib-content>
+        <lib-heading *ngSwitchCase="'heading'" [field]="field"></lib-heading>
     </div>
 </div>

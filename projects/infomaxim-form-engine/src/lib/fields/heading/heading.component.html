@@ -1,9 +1,9 @@
-<ng-component [ngSwitch]="htag">
-    <h1 *ngSwitchCase="'h1'" [class]="class">{{content}}</h1>
-    <h2 *ngSwitchCase="'h2'" [class]="class">{{content}}</h2>
-    <h3 *ngSwitchCase="'h3'" [class]="class">{{content}}</h3>
+<ng-container [ngSwitch]="field.htag">
+    <h1 *ngSwitchCase="'h1'" [class]="field.class">{{field.content}}</h1>
+    <h2 *ngSwitchCase="'h2'" [class]="field.class">{{field.content}}</h2>
+    <h3 *ngSwitchCase="'h3'" [class]="field.class">{{field.content}}</h3>
     <ng-container *ngSwitchCase="'h4'"> 
         <p></p>
-        <h4  [class]="class">{{content}}</h4>
+        <h4  [class]="field.class">{{field.content}}</h4>
     </ng-container>
-</ng-component>
+</ng-container>

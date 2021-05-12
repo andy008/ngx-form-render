@@ -5,8 +5,8 @@ import { Directive, EventEmitter, HostBinding, HostListener, Output } from '@ang
 })
 export class DragdropDirective {
 
-  @HostBinding('style.border') private border = '2px dashed #c0c4c7';
-  @HostBinding('style.opacity') private opacity = '1';
+  @HostBinding('style.border') public border = '2px dashed #c0c4c7';
+  @HostBinding('style.opacity') public opacity = '1';
   @Output() onFileDropped = new EventEmitter<any>();
 
   @HostListener('dragover', ['$event']) onDragOver(event: any){
