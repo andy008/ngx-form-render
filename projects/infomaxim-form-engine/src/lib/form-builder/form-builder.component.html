@@ -12,11 +12,11 @@
 </div>
 
 <ng-template #formBuilder>
-    <form class="form-horizontal" [formGroup]="form" #formDirective="ngForm">
+    <form [class]="formConfig.formClass" [formGroup]="form" #formDirective="ngForm">
         <div *ngFor="let column of formConfig.columns" [class]="column.class">
             <div *ngFor="let section of column.sections" [class]="section.class">
                 <div *ngFor="let field of section.fields">
-                    <lib-field-builder [form]="form" [field]="field"></lib-field-builder>
+                    <lib-field-builder [form]="form" [field]="field" [labelClass]="formConfig.labelClass"></lib-field-builder>
                 </div>
             </div>
         </div>

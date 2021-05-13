@@ -1,5 +1,5 @@
 <div class="form-group form-row" [formGroup]="form">
-    <label class="col-md-3 form-control-label" [attr.for]="field.label">
+    <label [class]="labelClass" [attr.for]="field.label" *ngIf="field.label">
         {{field.label}}
         <strong class="text-danger" *ngIf="field.required">*</strong>
     </label>
