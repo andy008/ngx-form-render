@@ -14,6 +14,8 @@ export class FormBuilderComponent implements OnInit {
   public form: FormGroup;
   public saveButton: String = '';
   public resetButton: String = '';
+  public saveClass: string;
+  public resetClass: string;
   @Output() sendFormData = new EventEmitter<object>();
   @ViewChild('formDirective') public formDirective: NgForm;
 
@@ -23,13 +25,15 @@ export class FormBuilderComponent implements OnInit {
     let fieldsCtrls = {};
     this.formTitle = this.formConfig['title'];
 
+    this.saveClass = ((this.formConfig.saveButtonClass =='') ? 'btn btn-primary m-1' : this.formConfig.controls.saveButtonClass);
+    this.resetClass = ((this.formConfig.resetButtonClass =='') ? 'btn btn-outline-warning m-1' : this.formConfig.controls.resetButtonClass);
+
     for (const key1 in this.formConfig['columns']) {
       let column = this.formConfig.columns[key1];
       for (const key2 in column['sections']) {    
         let section = column.sections[key2];   
         for (const key3 in section['fields']) {
           let field = section.fields[key3];
-          console.log(JSON.stringify(field));
           if (field?.required) {
             let validators = [Validators.required];
             if (field?.type === 'email') {
@@ -63,10 +67,13 @@ export class FormBuilderComponent implements OnInit {
   }
 
   submit() {
+    console.log('submit');
     if (this.getFormValidationErrors(this.form)) {
       this.form.markAllAsTouched();
     } else {
-      this.sendFormData.emit(this.form.value);
+      console.log('Send form data');
+      console.log(this.form.value);
+      this.sendFormData.emit(this.form);
     }
   }
 
@@ -92,6 +99,7 @@ export class FormBuilderComponent implements OnInit {
         });
       }
     });
+    console.log(result);
     return result;
   }
 

@@ -31,7 +31,7 @@ export class AppModule {
 
 ## Dependencies
 
-- [Bootstrap](https://github.com/ng-bootstrap/ng-bootstrap/)
+- [ngx-Bootstrap](https://github.com/valor-software/ngx-bootstrap/)
 
 ## Usage
 

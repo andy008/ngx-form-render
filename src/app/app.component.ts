@@ -6,12 +6,15 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'Infomaxim Form Builder';
   public formConfig: any = {
-    title: "Sample Form",
+    title: "",
+    formClass: 'row',    
     controls: {
       saveButton: 'Save',
-      resetButton: 'Reset'
+      saveButtonClass: 'btn btn-primary m-1',
+      resetButton: 'Reset',
+      resetButtonClass: 'btn btn-outline-warning m-1'
+
     },
     columns: [
       {

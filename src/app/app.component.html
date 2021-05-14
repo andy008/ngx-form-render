@@ -1,9 +1,2 @@
-<div class="title text-center">
-  Welcome to {{ title }} Test Project!
-</div>
-<div class="form-div">
-  <infomaxim-form-engine [formConfig]="formConfig" (formData)="receiveData($event)"></infomaxim-form-engine>
-  <br />
-</div>
-
+<infomaxim-form-engine [formConfig]="formConfig" (formData)="receiveData($event)"></infomaxim-form-engine>
 <router-outlet></router-outlet>
