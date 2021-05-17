@@ -67,12 +67,9 @@ export class FormBuilderComponent implements OnInit {
   }
 
   submit() {
-    console.log('submit');
-    if (this.getFormValidationErrors(this.form)) {
+    if (this.getFormValidationErrors(this.form).length) {
       this.form.markAllAsTouched();
     } else {
-      console.log('Send form data');
-      console.log(this.form.value);
       this.sendFormData.emit(this.form);
     }
   }
