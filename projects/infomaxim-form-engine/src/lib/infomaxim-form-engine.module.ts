@@ -9,6 +9,7 @@ import { TextboxComponent } from './fields/textbox/textbox.component';
 import { DropdownComponent } from './fields/dropdown/dropdown.component';
 import { RadioComponent } from './fields/radio/radio.component';
 import { CheckboxComponent } from './fields/checkbox/checkbox.component';
+import { CheckboxGroupComponent } from './fields/checkboxgroup/checkboxgroup.component';
 import { FileComponent } from './fields/file/file.component';
 import { SwitchComponent } from './fields/switch/switch.component';
 import { RangeComponent } from './fields/range/range.component';
@@ -28,6 +29,7 @@ import { ContentComponent } from './fields/content/content.component';
     DropdownComponent,
     RadioComponent,
     CheckboxComponent,
+    CheckboxGroupComponent,
     FileComponent,
     SwitchComponent,
     RangeComponent,
@@ -52,6 +54,7 @@ import { ContentComponent } from './fields/content/content.component';
     DropdownComponent,
     RadioComponent,
     CheckboxComponent,
+    CheckboxGroupComponent,
     FileComponent,
     SwitchComponent,
     RangeComponent,

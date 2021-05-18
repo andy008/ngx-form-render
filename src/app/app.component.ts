@@ -155,7 +155,15 @@ export class AppComponent {
             },
             {
               type: 'checkbox',
-              name: 'laguages',
+              name: 'remoteworker',
+              label: 'Remote Worker',
+              required: false,
+              value: false,
+              options: []
+            },            
+            {
+              type: 'checkboxgroup',
+              name: 'languages',
               label: 'Languages',
               required: true,
               style: 'row',

@@ -1,5 +1,5 @@
 <div class="form-group form-row" [formGroup]="form">
-    <label [class]="labelClass" [attr.for]="field.label" *ngIf="field.label">
+    <label [class]="labelClass" [attr.for]="field.label" *ngIf="field.label && !(field.type=='checkbox' && field.options.length==0)">
         {{field.label}}
         <strong class="text-danger" *ngIf="field.required">*</strong>
     </label>
@@ -11,6 +11,7 @@
         <lib-dropdown *ngSwitchCase="'dropdown'" [field]="field" [form]="form"></lib-dropdown>
         <lib-radio *ngSwitchCase="'radio'" [field]="field" [form]="form"></lib-radio>
         <lib-checkbox *ngSwitchCase="'checkbox'" [field]="field" [form]="form"></lib-checkbox>
+        <lib-checkbox-group *ngSwitchCase="'checkboxgroup'" [field]="field" [form]="form"></lib-checkbox-group>
         <lib-switch *ngSwitchCase="'switch'" [field]="field" [form]="form"></lib-switch>
         <lib-range *ngSwitchCase="'range'" [field]="field" [form]="form"></lib-range>
         <lib-date *ngSwitchCase="'date'" [field]="field" [form]="form"></lib-date>

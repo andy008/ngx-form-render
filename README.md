@@ -1,24 +1,38 @@
 # Infomaxim Form Engine (netAmbition)
 
-This library provides form rendering capabilities using Angular and JSON with integration with Infomaxim to fetch form definitions and post data.
+Easy Angular Reactive Form rendering from a JSON definition using the Bootstrap 4 design framework.
 
-The library provides Angular components that help developers to quickly generate Reactive Forms. 
+Wide range of form controls.
+Multiple columns.
+Multiple sections.
 
-Component supports validators, help messages and error messages.
 
-Based on ReactiveFormsModule from @angular/forms. Available custom and all angular built-in form elements. Automatically create full customised form with simple javascript object configuration. Also support some of the CSS styling for form attributes.
+## Input
+JSON object defining field types and styles.
 
-Currently uses Bootstrap. Future versions will provide support for other design frameworks.
+## Rendering
+Wide array of form components.
+Validation management; help and error messages.
+Defaults to vanilla Bootstrap 4 CSS markup.
+
+## Output
+Returns JSON from form submit ready for posting or further processing.
+
+## Dependencies
+Bootstrap 4 CSS style sheet
 
 ## Installation
-
 Install npm package into your Angular application
+
 ```bash
 $ npm install infomaxim-form-engine --save
+
 ```
 
 Once installed you need to import the main module
+
 ```typescript
+
 import { InfomaximFormBuilderModule } from 'infomaxim-form-engine';
 
 @NgModule({
@@ -36,40 +50,54 @@ export class AppModule {
 ## Usage
 
 ### Create your data model object
+
 ```typescript
 public formConfig: any = {
-    title: "Sample Form",                             // Form name to display
+    title: "Sample Form",                             //  Optional form title to display. Adds a form wrapper.
     controls: {
-      saveButton: 'Save',                             // Save button name
-      resetButton: 'Reset'                            // Reset button name
+      saveButton: 'Save',                             //  Save button name
+      saveButtonClass: 'btn btn-primary',             //  Save button atle
+      resetButton: 'Reset',                           //  Reset button name
+      resetButtonClass: 'btn btn-outline-warning'     //  Reset button style
     },
-    fields: [                                         // Defining fields of our form
-      {
-        type: 'text',                                 // Field type (text, email, password, number, dropdown, radio, checkbox, switch, range, date, time, datetime & file)
-        name: 'fullName',                             // Unique field name
-        label: 'Full Name',                           // Field label
-        value: '',                                    // Field value
-        required: true,                               // Necessary field or not
-        minLength: 5,                                 // Minimum length of field (Note: only for required field)
-        maxLength: 10,                                // Maximum length of field (Note: only for required field)
-        pattern: '^\\d{1,4}$',                        // Specify Regex Pattern for the field (Note: only for required field)
-        validationMessage: 'Full Name is required.',  // Validation error message
-        multiline: false,                             // Multiline field or not
-        lines: 5,                                     // Number of rows for field (Note: only for multiline input field)
-        placeholder: 'Full Name',                     //Placeholder to show inside field
-        options: [                                    // Options to populate the field (Note: only for radio, dropdown, checkbox & switch)
-          { key: 'male', label: 'Male' },
-          { key: 'female', label: 'Female' },
-          { key: 'other', label: 'Other' }
-        ],
-        min: '0',                                     // Minimum field value (Note: only for date & range)
-        max: '100',                                   // Maximum field value (Note: only for date & range)
-        step: 5,                                      // Step field value (Note: only for range)
-        sliderLabel: '$',                             // Slider label for field (Note: only for range)
-        multiple: true,                               // Multiple file upload support for field (Note: only for file)
-        onUpload: this.onUpload.bind(this),           // Function to call on file upload (Note: only for file)
-        style: 'row',                                 // Layout type (row & column) (Note: only for checkbox, switch & radio)
-      }
+    columns: [
+          {
+            class: 'col-12 col-lg-6 pb-4 pb-lg-0',
+            sections: [
+              {
+                class: 'mr-1',
+                fields: [    
+
+                  {
+                    type: 'text',                                 // Field type (text, email, password, number, dropdown, radio, checkbox, switch, range, date, time, datetime & file)
+                    name: 'fullName',                             // Unique field name
+                    label: 'Full Name',                           // Field label
+                    value: '',                                    // Field value
+                    required: true,                               // Necessary field or not
+                    minLength: 5,                                 // Minimum length of field (Note: only for required field)
+                    maxLength: 10,                                // Maximum length of field (Note: only for required field)
+                    pattern: '^\\d{1,4}$',                        // Specify Regex Pattern for the field (Note: only for required field)
+                    validationMessage: 'Full Name is required.',  // Validation error message
+                    multiline: false,                             // Multiline field or not
+                    lines: 5,                                     // Number of rows for field (Note: only for multiline input field)
+                    placeholder: 'Full Name',                     // Placeholder to show inside field
+                    options: [                                    // Options to populate the field (Note: only for radio, dropdown, checkbox & switch)
+                      { key: 'male', label: 'Male' },
+                      { key: 'female', label: 'Female' },
+                      { key: 'other', label: 'Other' }
+                    ],
+                    min: '0',                                     // Minimum field value (Note: only for date & range)
+                    max: '100',                                   // Maximum field value (Note: only for date & range)
+                    step: 5,                                      // Step field value (Note: only for range)
+                    sliderLabel: '$',                             // Slider label for field (Note: only for range)
+                    multiple: true,                               // Multiple file upload support for field (Note: only for file)
+                    onUpload: this.onUpload.bind(this),           // Function to call on file upload (Note: only for file)
+                    style: 'row',                                 // Layout type (row & column) (Note: only for checkbox, switch & radio)
+                  }
+                ]
+              }
+            ]
+          }
     ]
 }
 
@@ -90,19 +118,9 @@ receiveData(data: any) {                              // Received function calle
 
 ### HTML Form
 
-Snippet below will generate form fields
+Example component inclusion:-
+
 ```html
 <infomaxim-form-engine [formConfig]="formConfig" (formData)="receiveData($event)"></infomaxim-form-engine>
 ```
 
-### Form
-
-![Form](https://github.com/arjunkhetia/Angular-Bootstrap-form-engine/blob/master/src/assets/form.png "Form")
-
-### Validation Error Form
-
-![Error Form](https://github.com/arjunkhetia/Angular-Bootstrap-form-engine/blob/master/src/assets/errorform.png "Error Form")
-
-### Filled Form
-
-![Filled Form](https://github.com/arjunkhetia/Angular-Bootstrap-form-engine/blob/master/src/assets/filledform.png "Filled Form")
