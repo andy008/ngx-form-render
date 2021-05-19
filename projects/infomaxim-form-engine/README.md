@@ -11,7 +11,7 @@ Multiple sections.
 JSON object defining columns, section and fields.
 
 ## Field Types
-text, email, password, number, dropdown, radio, checkbox, switch, range, date, time, datetime & file
+text, email, password, number, dropdown, radio, checkbox, checkboxgroup, switch, range, date, time, datetime & file
 
 ## Special Fields
 content, heading
@@ -31,7 +31,7 @@ Bootstrap 4 CSS style sheet
 Install npm package into your Angular application
 
 ```bash
-$ npm install infomaxim-form-engine --save
+$ npm install infomaxim6-form-engine --save
 
 ```
 

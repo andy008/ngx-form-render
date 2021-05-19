@@ -1,16 +1,15 @@
 <div [formGroup]="form">
+    <div class="form-group form-check" [ngClass]="{'is-invalid': isTouched && isEmpty }"
+        [ngClass]="field.style === 'row' ? 'f-row' : 'f-column'">
 
-        <div class="form-group form-check" [ngClass]="{'is-invalid': isTouched && isEmpty }"
-            [ngClass]="field.style === 'row' ? 'f-row' : 'f-column'">
-
-            <div class="pad-bot">
-                <input class="form-check-input" [id]="field.name" type="checkbox" [formControlName]="field.name" [name]="field.name">
-                <label class="form-check-label">{{field.label}}</label>     
-            </div>          
-
-        </div>
-        <div *ngIf="field.validationMessage && field.required" class="invalid-feedback">
-            {{ field.validationMessage }}
-        </div>
-
-</div>
+        <div class="pad-bot">
+            <input class="form-check-input" type="checkbox" [formControlName]="field.name" 
+            [class.is-invalid]="isDirty && !isValid" 
+            [ngClass]="{'is-invalid': isTouched && isErrors }" >
+            <label class="form-check-label" [htmlFor]="field.name">{{field.label}}</label>     
+        </div>          
+    </div>
+    <div *ngIf="isDirty && !isValid" [class.is-invalid]="isDirty && !isValid">
+        {{ field.validationMessage }}
+    </div>
+</div> 

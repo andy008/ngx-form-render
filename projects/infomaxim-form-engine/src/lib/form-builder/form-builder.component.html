@@ -24,7 +24,7 @@
             <button *ngIf="resetButton" type="reset" [class]="resetClass" (click)="reset()">
                 {{ resetButton }}
             </button>
-            <button *ngIf="saveButton" type="button" [disabled]="!form.valid" [class]="saveClass" (click)="submit()">
+            <button *ngIf="saveButton" type="button" [class]="saveClass" (click)="submit()">
                 {{ saveButton }}
             </button>
         </div>

@@ -72,7 +72,7 @@ export class AppComponent {
                 type: 'radio',
                 name: 'gender',
                 label: 'Gender',
-                required: true,
+                required: false,
                 style: 'row',
                 value: '',
                 options: [
@@ -89,7 +89,7 @@ export class AppComponent {
                 // value: '2018-07-22',
                 // min: '2018-01-01',
                 // max: '2018-12-31',
-                required: true,
+                required: false,
                 validationMessage: 'Please Select Birth Date.',
               },
               {
@@ -97,7 +97,7 @@ export class AppComponent {
                 name: 'birthtime',
                 label: 'Birth Time',
                 // value: '06:35',
-                required: true,
+                required: false,
                 validationMessage: 'Please Select Birth Time.',
               }
             ]
@@ -114,7 +114,7 @@ export class AppComponent {
               name: 'country',
               label: 'Country',
               value: '',
-              required: true,
+              required: false,
               options: [
                 { key: 'india', label: 'India' },
                 { key: 'usa', label: 'USA' },
@@ -132,7 +132,7 @@ export class AppComponent {
               max: 100,
               step: 5,
               value: "0",
-              required: true,
+              required: false,
               validationMessage: 'Please Select Salary.',
             },
             {
@@ -140,7 +140,7 @@ export class AppComponent {
               name: 'projectdatetime',
               label: 'Project Date & Time',
               // value: '1990-03-28T06:35',
-              required: true,
+              required: false,
               validationMessage: 'Project Date & Time is required.',
             },
             {
@@ -149,7 +149,7 @@ export class AppComponent {
               label: 'Project Image',
               multiple: false,
               value: null,
-              required: true,
+              required: false,
               onUpload: this.onUpload.bind(this),
               validationMessage: 'Please Select Project Image Files.',
             },
@@ -157,15 +157,16 @@ export class AppComponent {
               type: 'checkbox',
               name: 'remoteworker',
               label: 'Remote Worker',
-              required: false,
+              required: true,
               value: false,
-              options: []
+              options: [],
+              validationMessage: 'You must be a remote worker.'
             },            
             {
               type: 'checkboxgroup',
               name: 'languages',
               label: 'Languages',
-              required: true,
+              required: false,
               style: 'row',
               value: {
                 // cooking: false, dancing: true
@@ -202,7 +203,7 @@ export class AppComponent {
   };
 
   receiveData(data: any) {
-    console.log(data);
+    console.log(data.value);
   }
 
   onUpload(event: any) {

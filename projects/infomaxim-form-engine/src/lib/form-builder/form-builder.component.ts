@@ -35,7 +35,10 @@ export class FormBuilderComponent implements OnInit {
         for (const key3 in section['fields']) {
           let field = section.fields[key3];
           if (field?.required) {
-            let validators = [Validators.required];
+            let validators = [Validators.required]; 
+            if(field.type == 'checkbox'){
+              validators = [Validators.requiredTrue];  //pattern('true')
+            }
             if (field?.type === 'email') {
               validators.push(Validators.email);
             }
