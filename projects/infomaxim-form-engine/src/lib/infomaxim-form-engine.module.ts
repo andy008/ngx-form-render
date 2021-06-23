@@ -19,6 +19,7 @@ import { DatetimeComponent } from './fields/datetime/datetime.component';
 import { DragdropDirective } from './fields/file/dragdrop.directive';
 import { HeadingComponent } from './fields/heading/heading.component';
 import { ContentComponent } from './fields/content/content.component';
+import { ImageComponent } from './fields/image/image.component';
 
 @NgModule({
   declarations: [
@@ -38,7 +39,8 @@ import { ContentComponent } from './fields/content/content.component';
     DatetimeComponent,
     DragdropDirective,
     HeadingComponent,
-    ContentComponent
+    ContentComponent,
+    ImageComponent
   ],
   imports: [
     //BrowserModule,
@@ -62,7 +64,8 @@ import { ContentComponent } from './fields/content/content.component';
     TimeComponent,
     DatetimeComponent,
     HeadingComponent,
-    ContentComponent
+    ContentComponent,
+    ImageComponent
   ]
 })
 export class InfomaximFormBuilderModule { }

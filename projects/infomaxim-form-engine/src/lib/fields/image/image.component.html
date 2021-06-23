@@ -1,0 +1,9 @@
+<div [formGroup]="form">
+    <img src="/infomaxim/assets/images/{{field.value}}" class="img-fluid" *ngIf="field.value.length>3" alt="">
+    <input [attr.type]="field.type" class="form-control" type="file"
+        [class.is-invalid]="isDirty && !isValid" [ngClass]="{'is-invalid': isTouched && isErrors }" [id]="field.name"
+        [name]="field.name" [formControlName]="field.name" [placeholder]="field.placeholder">
+    <div *ngIf="field.validationMessage" class="invalid-feedback">
+        {{ field.validationMessage }}
+    </div>
+</div>
