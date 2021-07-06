@@ -12,8 +12,8 @@ export class AppComponent {
     controls: {
       saveButton: 'Save',
       saveButtonClass: 'btn btn-primary m-1',
-      resetButton: 'Reset',
-      resetButtonClass: 'btn btn-outline-warning m-1'
+      cancelButton: 'Cancel',
+      cancelButtonClass: 'btn btn-outline-warning m-1'      
 
     },
     columns: [
@@ -203,7 +203,11 @@ export class AppComponent {
   };
 
   receiveData(data: any) {
-    console.log(data.value);
+    if(data==null){
+      console.log('Cancelled')
+    }else{
+      console.log(data.value);
+    }
   }
 
   onUpload(event: any) {

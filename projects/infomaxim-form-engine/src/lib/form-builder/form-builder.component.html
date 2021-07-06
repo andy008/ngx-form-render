@@ -21,6 +21,9 @@
             </div>
         </div>
         <div class="col-md-12 text-right">
+            <button *ngIf="cancelButton" type="button" [class]="cancelClass" (click)="cancel()">
+                {{ cancelButton }}
+            </button>            
             <button *ngIf="resetButton" type="reset" [class]="resetClass" (click)="reset()">
                 {{ resetButton }}
             </button>

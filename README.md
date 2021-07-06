@@ -59,6 +59,8 @@ public formConfig: any = {
       saveButtonClass: 'btn btn-primary',             //  Save button atle
       resetButton: 'Reset',                           //  Reset button name
       resetButtonClass: 'btn btn-outline-warning'     //  Reset button style
+      cancelButton: 'Cancel',                           //  Reset button name
+      cancelButtonClass: 'btn btn-outline-warning'     //  Reset button style      
     },
     columns: [
           {

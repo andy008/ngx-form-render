@@ -14,8 +14,10 @@ export class FormBuilderComponent implements OnInit {
   public form: FormGroup;
   public saveButton: String = '';
   public resetButton: String = '';
+  public cancelButton: String = '';
   public saveClass: string;
   public resetClass: string;
+  public cancelClass: string;
   @Output() sendFormData = new EventEmitter<object>();
   @ViewChild('formDirective') public formDirective: NgForm;
 
@@ -27,6 +29,7 @@ export class FormBuilderComponent implements OnInit {
 
     this.saveClass = ((this.formConfig.saveButtonClass =='') ? 'btn btn-primary m-1' : this.formConfig.controls.saveButtonClass);
     this.resetClass = ((this.formConfig.resetButtonClass =='') ? 'btn btn-outline-warning m-1' : this.formConfig.controls.resetButtonClass);
+    this.cancelClass = ((this.formConfig.cancelButtonClass =='') ? 'btn btn-outline-warning m-1' : this.formConfig.controls.cancelButtonClass);
 
     for (const key1 in this.formConfig['columns']) {
       let column = this.formConfig.columns[key1];
@@ -65,6 +68,9 @@ export class FormBuilderComponent implements OnInit {
     if (this.formConfig && this.formConfig['controls'] && this.formConfig['controls']['resetButton']) {
       this.resetButton = this.formConfig['controls']['resetButton'];
     }
+    if (this.formConfig && this.formConfig['controls'] && this.formConfig['controls']['cancelButton']) {
+      this.cancelButton = this.formConfig['controls']['cancelButton'];
+    }    
 
     this.form = new FormGroup(fieldsCtrls);
   }
@@ -76,6 +82,10 @@ export class FormBuilderComponent implements OnInit {
       this.sendFormData.emit(this.form);
     }
   }
+
+  cancel() {
+    this.sendFormData.emit(null);
+  }  
 
   reset() {
     try {
