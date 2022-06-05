@@ -54,6 +54,7 @@ export class AppModule {
 ```typescript
 public formConfig: any = {
     title: "Sample Form",                             //  Optional form title to display. Adds a form wrapper.
+    showControls: true,                               //  Set to false if using your own buttons
     controls: {
       saveButton: 'Save',                             //  Save button name
       saveButtonClass: 'btn btn-primary',             //  Save button atle
