@@ -1,7 +1,7 @@
 {
   "name": "infomaxim6-form-engine",
-  "version": "1.0.9",
-  "description": "Infomaxim Form Engine for Angular Using Bootstrap UI Framework and Infomaxim V2 API",
+  "version": "1.1.0",
+  "description": "Infomaxim Form Engine for Angular Using Bootstrap 5 and Infomaxim V2 API",
   "repository": {
     "type": "git",
     "url": ""

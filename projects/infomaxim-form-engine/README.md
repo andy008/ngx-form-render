@@ -1,6 +1,6 @@
 # Infomaxim Form Engine (netAmbition)
 
-Easy Angular Reactive Form rendering from a JSON definition using the Bootstrap 4 design framework.
+Easy Angular Reactive Form rendering from a JSON definition using the Bootstrap 5 design framework.
 
 Wide range of form controls.
 Multiple columns.
@@ -19,13 +19,13 @@ content, heading
 ## Rendering
 Wide array of form components.
 Validation management; help and error messages.
-Defaults to vanilla Bootstrap 4 CSS markup.
+Defaults to vanilla Bootstrap 5 CSS markup.
 
 ## Output
 Returns JSON from form submit ready for posting or further processing.
 
 ## Dependencies
-Bootstrap 4 CSS style sheet
+Bootstrap 5 CSS style sheet
 
 ## Installation
 Install npm package into your Angular application
@@ -60,6 +60,7 @@ export class AppModule {
 ```typescript
 public formConfig: any = {
     title: "Sample Form",                             //  Optional form title to display. Adds a form wrapper.
+    showControls: false,                              //  Show or hide form controls                        
     controls: {
       saveButton: 'Save',                             //  Save button name
       saveButtonClass: 'btn btn-primary',             //  Save button atle
