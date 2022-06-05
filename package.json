@@ -27,7 +27,7 @@
     "@angular/platform-browser": "^12.2.16",
     "@angular/platform-browser-dynamic": "^12.2.16",
     "@angular/router": "^12.2.16",
-    "@ng-bootstrap/ng-bootstrap": "^8.0.4",
+    "@ng-bootstrap/ng-bootstrap": "^10.0.0",
     "bootstrap": "4.1.1",
     "classlist.js": "^1.1.20150312",
     "infomaxim6-form-engine": "file:projects/infomaxim-form-engine",
