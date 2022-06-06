@@ -25,7 +25,8 @@ Defaults to vanilla Bootstrap 5 CSS markup.
 Returns JSON from form submit ready for posting or further processing.
 
 ## Dependencies
-Bootstrap 5 CSS style sheet
+^Angular 14
+Bootstrap 5
 
 ## Installation
 Install npm package into your Angular application
