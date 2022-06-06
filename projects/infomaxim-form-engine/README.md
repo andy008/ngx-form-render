@@ -14,7 +14,7 @@ JSON object defining columns, section and fields.
 text, email, password, number, dropdown, radio, checkbox, checkboxgroup, switch, range, date, time, datetime & file
 
 ## Special Fields
-content, heading
+content, heading, image/file
 
 ## Rendering
 Wide array of form components.
@@ -27,6 +27,10 @@ Returns JSON from form submit ready for posting or further processing.
 ## Dependencies
 ^Angular 14
 Bootstrap 5
+
+## Coming soon
+Integration of Quill editor
+More layout controls
 
 ## Installation
 Install npm package into your Angular application
