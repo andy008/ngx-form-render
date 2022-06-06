@@ -9,6 +9,7 @@ export class AppComponent {
   public formConfig: any = {
     title: "",
     formClass: 'row',    
+    showControls: false,
     controls: {
       saveButton: 'Save',
       saveButtonClass: 'btn btn-primary m-1',

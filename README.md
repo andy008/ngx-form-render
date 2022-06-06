@@ -13,13 +13,13 @@ JSON object defining field types and styles.
 ## Rendering
 Wide array of form components.
 Validation management; help and error messages.
-Defaults to vanilla Bootstrap 4 CSS markup.
+Defaults to vanilla Bootstrap 5 CSS markup.
 
 ## Output
 Returns JSON from form submit ready for posting or further processing.
 
 ## Dependencies
-Bootstrap 4 CSS style sheet
+Bootstrap 5 CSS style sheet
 
 ## Installation
 Install npm package into your Angular application
