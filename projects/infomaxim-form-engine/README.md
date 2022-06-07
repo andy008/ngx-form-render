@@ -6,6 +6,8 @@ Wide range of form controls.
 Multiple columns.
 Multiple sections.
 
+## Rendering
+Added ^Angular 14.0.0 dependency
 
 ## Input
 JSON object defining columns, section and fields.

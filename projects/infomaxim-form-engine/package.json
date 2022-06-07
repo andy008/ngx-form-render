@@ -1,6 +1,6 @@
 {
   "name": "infomaxim6-form-engine",
-  "version": "1.1.2",
+  "version": "1.1.23",
   "description": "Form Rendering Engine using Angular 14+ and Bootstrap 5",
   "repository": {
     "type": "git",
@@ -8,15 +8,15 @@
   },
   "author": "Andrew Farrell <andy@infomaxim.com>",
   "peerDependencies": {
-    "@angular/common": "^10.2.0",
-    "@angular/core": "^10.2.0",
-    "typescript": "^4.6.2"    
+    "@angular/common": "^14.0.0",
+    "@angular/core": "^14.0.0"  
   },
   "keywords": [
     "Form Rendering Engine"
   ],
   "main": "karma.conf.js",
   "devDependencies": {
+    "typescript": "^4.6.2",     
     "ng-packagr": "^11.2.4"
   },
   "scripts": {
