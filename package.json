@@ -31,7 +31,6 @@
     "classlist.js": "^1.1.20150312",
     "infomaxim6-form-engine": "file:projects/infomaxim-form-engine",
     "ngx-bootstrap": "^6.2.0",
-    "npm-packagr": "^1.0.41",
     "popper.js": "^1.16.1",
     "rxjs": "^6.6.7",
     "tslib": "^2.4.0",
