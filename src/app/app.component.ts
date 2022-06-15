@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ViewChild } from '@angular/core';
 
 @Component({
   selector: 'app-root',
@@ -6,6 +6,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
+
+  @ViewChild('formEngine', { static: false }) formEngine;
+
   public formConfig: any = {
     title: "",
     formClass: 'row',    
@@ -202,6 +205,10 @@ export class AppComponent {
       }
     ]
   };
+
+  submitForm(){
+    this.formEngine.submit();
+  }
 
   receiveData(data: any) {
     if(data==null){

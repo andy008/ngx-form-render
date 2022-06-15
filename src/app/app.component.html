@@ -1,2 +1,4 @@
-<infomaxim-form-engine [formConfig]="formConfig" (formData)="receiveData($event)"></infomaxim-form-engine>
+<button (click)="submitForm()">Submit</button>
+
+<infomaxim-form-engine #formEngine [formConfig]="formConfig" (formData)="receiveData($event)"></infomaxim-form-engine>
 <router-outlet></router-outlet>
