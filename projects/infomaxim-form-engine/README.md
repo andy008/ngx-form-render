@@ -23,6 +23,10 @@ Wide array of form components.
 Validation management; help and error messages.
 Defaults to vanilla Bootstrap 5 CSS markup.
 
+## Methods
+submit()
+Check form validation; if valid the form values are emitted. See HTML form example below.
+
 ## Output
 Returns JSON from form submit ready for posting or further processing.
 
