@@ -15,12 +15,15 @@
       "prefix": "app",
       "architect": {
         "build": {
-          "builder": "@angular-devkit/build-angular:browser",
+          "builder": "@angular-devkit/build-angular:application",
           "options": {
-            "outputPath": "dist/Infomaxim-Form-engine-example",
+            "outputPath": {
+              "base": "dist/Infomaxim-Form-engine-example"
+            },
             "index": "src/index.html",
-            "main": "src/main.ts",
-            "polyfills": "src/polyfills.ts",
+            "polyfills": [
+              "src/polyfills.ts"
+            ],
             "tsConfig": "tsconfig.app.json",
             "aot": true,
             "assets": [
@@ -34,7 +37,8 @@
             ],
             "scripts": [
               "node_modules/popper.js/dist/umd/popper.min.js"
-            ]
+            ],
+            "browser": "src/main.ts"
           },
           "configurations": {
             "production": {
@@ -50,8 +54,6 @@
               "extractCss": true,
               "namedChunks": false,
               "extractLicenses": true,
-              "vendorChunk": false,
-              "buildOptimizer": true,
               "budgets": [
                 {
                   "type": "initial",
