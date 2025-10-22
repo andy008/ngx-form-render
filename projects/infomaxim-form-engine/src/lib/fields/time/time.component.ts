@@ -2,9 +2,10 @@ import { Component, OnInit, Input } from '@angular/core';
 import { FormGroup } from '@angular/forms';
 
 @Component({
-  selector: 'lib-time',
-  templateUrl: './time.component.html',
-  styleUrls: ['./time.component.scss']
+    selector: 'lib-time',
+    templateUrl: './time.component.html',
+    styleUrls: ['./time.component.scss'],
+    standalone: false
 })
 export class TimeComponent implements OnInit {
 

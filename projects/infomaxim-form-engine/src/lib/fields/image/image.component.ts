@@ -2,9 +2,10 @@ import { Component, OnInit, Input } from '@angular/core';
 import { FormGroup } from '@angular/forms';
 
 @Component({
-  selector: 'lib-image',
-  templateUrl: './image.component.html',
-  styleUrls: ['./image.component.scss']
+    selector: 'lib-image',
+    templateUrl: './image.component.html',
+    styleUrls: ['./image.component.scss'],
+    standalone: false
 })
 export class ImageComponent implements OnInit {
 

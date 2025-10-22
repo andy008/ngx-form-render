@@ -2,9 +2,10 @@ import { Component, OnInit, Input } from '@angular/core';
 import { FormGroup } from '@angular/forms';
 
 @Component({
-  selector: 'lib-radio',
-  templateUrl: './radio.component.html',
-  styleUrls: ['./radio.component.scss']
+    selector: 'lib-radio',
+    templateUrl: './radio.component.html',
+    styleUrls: ['./radio.component.scss'],
+    standalone: false
 })
 export class RadioComponent implements OnInit {
 

@@ -2,9 +2,10 @@ import { Component, OnInit, Input } from '@angular/core';
 import { FormGroup } from '@angular/forms';
 
 @Component({
-  selector: 'lib-range',
-  templateUrl: './range.component.html',
-  styleUrls: ['./range.component.scss']
+    selector: 'lib-range',
+    templateUrl: './range.component.html',
+    styleUrls: ['./range.component.scss'],
+    standalone: false
 })
 export class RangeComponent implements OnInit {
 

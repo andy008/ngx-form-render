@@ -1,9 +1,10 @@
 import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
-  selector: 'lib-field-builder',
-  templateUrl: './field-builder.component.html',
-  styleUrls: ['./field-builder.component.scss']
+    selector: 'lib-field-builder',
+    templateUrl: './field-builder.component.html',
+    styleUrls: ['./field-builder.component.scss'],
+    standalone: false
 })
 export class FieldBuilderComponent implements OnInit {
 

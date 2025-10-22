@@ -2,9 +2,10 @@ import { Component, OnInit, Input } from '@angular/core';
 import { FormGroup, Validators } from '@angular/forms';
 
 @Component({
-  selector: 'lib-checkbox',
-  templateUrl: './checkbox.component.html',
-  styleUrls: ['./checkbox.component.scss']
+    selector: 'lib-checkbox',
+    templateUrl: './checkbox.component.html',
+    styleUrls: ['./checkbox.component.scss'],
+    standalone: false
 })
 export class CheckboxComponent implements OnInit {
 

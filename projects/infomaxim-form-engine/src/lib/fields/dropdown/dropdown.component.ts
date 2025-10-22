@@ -2,9 +2,10 @@ import { Component, OnInit, Input } from '@angular/core';
 import { FormGroup } from '@angular/forms';
 
 @Component({
-  selector: 'lib-dropdown',
-  templateUrl: './dropdown.component.html',
-  styleUrls: ['./dropdown.component.scss']
+    selector: 'lib-dropdown',
+    templateUrl: './dropdown.component.html',
+    styleUrls: ['./dropdown.component.scss'],
+    standalone: false
 })
 export class DropdownComponent implements OnInit {
 

@@ -2,9 +2,10 @@ import { Component, OnInit, Input } from '@angular/core';
 import { FormGroup } from '@angular/forms';
 
 @Component({
-  selector: 'lib-file',
-  templateUrl: './file.component.html',
-  styleUrls: ['./file.component.scss']
+    selector: 'lib-file',
+    templateUrl: './file.component.html',
+    styleUrls: ['./file.component.scss'],
+    standalone: false
 })
 export class FileComponent implements OnInit {
 

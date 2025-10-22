@@ -2,9 +2,10 @@ import { Component, OnInit, Input } from '@angular/core';
 import { FormGroup } from '@angular/forms';
 
 @Component({
-  selector: 'lib-checkbox-group',
-  templateUrl: './checkboxgroup.component.html',
-  styleUrls: ['./checkboxgroup.component.scss']
+    selector: 'lib-checkbox-group',
+    templateUrl: './checkboxgroup.component.html',
+    styleUrls: ['./checkboxgroup.component.scss'],
+    standalone: false
 })
 export class CheckboxGroupComponent implements OnInit {
 

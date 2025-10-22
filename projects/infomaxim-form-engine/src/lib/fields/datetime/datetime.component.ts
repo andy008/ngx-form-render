@@ -2,9 +2,10 @@ import { Component, OnInit, Input } from '@angular/core';
 import { FormGroup } from '@angular/forms';
 
 @Component({
-  selector: 'lib-datetime',
-  templateUrl: './datetime.component.html',
-  styleUrls: ['./datetime.component.scss']
+    selector: 'lib-datetime',
+    templateUrl: './datetime.component.html',
+    styleUrls: ['./datetime.component.scss'],
+    standalone: false
 })
 export class DatetimeComponent implements OnInit {
 
