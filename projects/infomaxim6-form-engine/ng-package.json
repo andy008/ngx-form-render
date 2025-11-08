@@ -1,15 +1,10 @@
 {
-  "$schema": "node_modules/ng-packagr/ng-package.schema.json",
+  "$schema": "../../node_modules/ng-packagr/ng-package.schema.json",
   "dest": "../../dist/infomaxim6-form-engine",
   "lib": {
-    "entryFile": "src/public-api.ts"
+    "entryFile": "src/public-api.ts",
+    "flatModuleFile": "infomaxim6-form-engine"
   },
-  "allowedNonPeerDependencies": []
+  "allowedNonPeerDependencies": ["tslib"],
+  "assets": ["README.md", "LICENSE", "package.json"]
 }
-
-
-
-
-
-
-

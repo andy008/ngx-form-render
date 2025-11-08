@@ -2,37 +2,57 @@
   "name": "infomaxim6-form-engine",
   "version": "1.2.0",
   "description": "Form Rendering Engine using Angular 20+ and Bootstrap 5",
-  "repository": {
-    "type": "git",
-    "url": ""
-  },
   "author": "Andrew Farrell <andy@infomaxim.com>",
+  "license": "ISC",
+  "sideEffects": false,
+  "type": "module",
+  "publishConfig": { "access": "public" },
+
   "peerDependencies": {
-    "@angular/animations": "^20.3.6",
-    "@angular/common": "^20.3.6",
-    "@angular/core": "^20.3.6",
-    "@angular/forms": "^20.3.6",
-    "@angular/localize": "^20.3.6",
-    "@angular/platform-browser": "^20.3.6",
-    "@angular/platform-browser-dynamic": "^20.3.6",
-    "@angular/router": "^20.3.6"
+    "@angular/animations": "^20.0.0",
+    "@angular/common": "^20.0.0",
+    "@angular/core": "^20.0.0",
+    "@angular/forms": "^20.0.0",
+    "@angular/localize": "^20.0.0",
+    "@angular/platform-browser": "^20.0.0",
+    "@angular/platform-browser-dynamic": "^20.0.0",
+    "@angular/router": "^20.0.0",
+    "rxjs": "^7.8.0",
+    "zone.js": "^0.14.0"
   },
-  "keywords": [
-    "Form Rendering Engine"
-  ],
-  "main": "karma.conf.js",
+  "peerDependenciesMeta": {
+    "@angular/animations": { "optional": true },
+    "@angular/localize": { "optional": true }
+  },
+
+  "dependencies": {
+    "tslib": "^2.6.0"
+  },
+
   "devDependencies": {
-    "ng-packagr": "^20.3.0",
-    "typescript": "^5.8.3"
+    "ng-packagr": "^20.3.0"
   },
+
   "scripts": {
-    "ng": "ng",
-    "start": "ng serve",
-    "build": "ng build",
-    "test": "ng test",
-    "lint": "ng lint",
-    "e2e": "ng e2e",
-    "packagr": "ng-packagr -p ng-package.json"
+    "build": "ng build infomaxim6-form-engine",
+    "pack:dry": "cd ../../dist/infomaxim6-form-engine && npm pack --dry-run",
+    "release:patch": "npm run build && cd ../../dist/infomaxim6-form-engine && npm version patch && npm publish --access public",
+    "release:minor": "npm run build && cd ../../dist/infomaxim6-form-engine && npm version minor && npm publish --access public"
   },
-  "license": "ISC"
+
+  "exports": {
+    ".": {
+      "types": "./public-api.d.ts",
+      "default": "./fesm2022/infomaxim6-form-engine.mjs"
+    }
+  },
+  "files": [
+    "bundles/",
+    "esm2022/",
+    "fesm2022/",
+    "public-api.d.ts",
+    "package.json",
+    "README.md",
+    "LICENSE"
+  ]
 }
