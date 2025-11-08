@@ -2,7 +2,7 @@
 import { CommonModule } from '@angular/common'; 
 import { NgModule } from '@angular/core';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-import { InfomaximFormEngineComponent } from './infomaxim-form-engine.component';
+import { InfomaximFormEngineComponent } from './infomaxim6-form-engine.component';
 import { FormBuilderComponent } from './form-builder/form-builder.component';
 import { FieldBuilderComponent } from './field-builder/field-builder.component';
 import { TextboxComponent } from './fields/textbox/textbox.component';

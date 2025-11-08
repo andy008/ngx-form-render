@@ -1,5 +1,5 @@
 {
-  "name": "infomaxim-form-engine",
+  "name": "infomaxim6-form-engine",
   "version": "1.2.0",
   "description": "Reactive Form Engine For Angular Using Bootstrap UI Framework and Infomaxim Form API|Angular 20",
   "scripts": {
@@ -16,7 +16,7 @@
   "author": "Andy Farrell <andy@infomaxim.com> (www.infomaxim.com)",
   "private": false,
   "dependencies": {
-    "@andyf008/infomaxim6-form-engine": "file:projects/infomaxim-form-engine",
+    "@andyf008/infomaxim6-form-engine": "file:projects/infomaxim6-form-engine",
     "@angular/animations": "^20.3.6",
     "@angular/common": "^20.3.6",
     "@angular/core": "^20.3.6",
@@ -27,7 +27,7 @@
     "@angular/router": "^20.3.6",
     "@popperjs/core": "^2.11.8",
     "bootstrap": "^5.3.3",
-    "infomaxim6-form-engine": "file:projects/infomaxim-form-engine",
+    "infomaxim6-form-engine": "file:projects/infomaxim6-form-engine",
     "ngx-bootstrap": "^20.0.2",
     "rxjs": "^7.8.1",
     "tslib": "^2.8.1",

@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "infomaxim-form-engine": {
+    "infomaxim6-form-engine": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -18,7 +18,7 @@
           "builder": "@angular-devkit/build-angular:application",
           "options": {
             "outputPath": {
-              "base": "dist/Infomaxim-Form-engine-example"
+              "base": "dist/infomaxim6-form-engine-example"
             },
             "index": "src/index.html",
             "polyfills": [
@@ -68,18 +68,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "buildTarget": "infomaxim-form-engine:build"
+            "buildTarget": "infomaxim6-form-engine:build"
           },
           "configurations": {
             "production": {
-              "buildTarget": "infomaxim-form-engine:build:production"
+              "buildTarget": "infomaxim6-form-engine:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "buildTarget": "infomaxim-form-engine:build"
+            "buildTarget": "infomaxim6-form-engine:build"
           }
         },
         "test": {
@@ -107,28 +107,28 @@
     },
     "infomaxim6-form-engine": {
       "projectType": "library",
-      "root": "projects/infomaxim-form-engine",
-      "sourceRoot": "projects/infomaxim-form-engine/src",
+      "root": "projects/infomaxim6-form-engine",
+      "sourceRoot": "projects/infomaxim6-form-engine/src",
       "prefix": "lib",
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-angular:ng-packagr",
           "options": {
-            "tsConfig": "projects/infomaxim-form-engine/tsconfig.lib.json",
-            "project": "projects/infomaxim-form-engine/ng-package.json"
+            "tsConfig": "projects/infomaxim6-form-engine/tsconfig.lib.json",
+            "project": "projects/infomaxim6-form-engine/ng-package.json"
           },
           "configurations": {
             "production": {
-              "tsConfig": "projects/infomaxim-form-engine/tsconfig.lib.prod.json"
+              "tsConfig": "projects/infomaxim6-form-engine/tsconfig.lib.prod.json"
             }
           }
         },
         "test": {
           "builder": "@angular-devkit/build-angular:karma",
           "options": {
-            "main": "projects/infomaxim-form-engine/src/test.ts",
-            "tsConfig": "projects/infomaxim-form-engine/tsconfig.spec.json",
-            "karmaConfig": "projects/infomaxim-form-engine/karma.conf.js"
+            "main": "projects/infomaxim6-form-engine/src/test.ts",
+            "tsConfig": "projects/infomaxim6-form-engine/tsconfig.spec.json",
+            "karmaConfig": "projects/infomaxim6-form-engine/karma.conf.js"
           }
         }
       }

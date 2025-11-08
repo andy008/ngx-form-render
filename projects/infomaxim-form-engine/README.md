@@ -50,7 +50,7 @@ Once installed you need to import the main module
 
 ```typescript
 
-import { InfomaximFormBuilderModule } from 'infomaxim-form-engine';
+import { InfomaximFormBuilderModule } from 'infomaxim6-form-engine';
 
 @NgModule({
     imports: [
@@ -139,6 +139,6 @@ receiveData(data: any) {                              // Received function calle
 Example component inclusion:-
 
 ```html
-<infomaxim-form-engine [formConfig]="formConfig" (formData)="receiveData($event)"></infomaxim-form-engine>
+<infomaxim6-form-engine [formConfig]="formConfig" (formData)="receiveData($event)"></infomaxim6-form-engine>
 ```
 

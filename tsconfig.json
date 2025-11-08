@@ -16,9 +16,9 @@
       "dom"
     ],
     "paths": {
-      "infomaxim-form-engine": [
-        "dist/infomaxim-form-engine/infomaxim-form-engine",
-        "dist/infomaxim-form-engine"
+      "infomaxim6-form-engine": [
+        "dist/infomaxim6-form-engine/infomaxim6-form-engine",
+        "dist/infomaxim6-form-engine"
       ]
     }
   }
