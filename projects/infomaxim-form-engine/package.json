@@ -1,7 +1,7 @@
 {
   "name": "infomaxim6-form-engine",
   "version": "1.1.24",
-  "description": "Form Rendering Engine using Angular 14+ and Bootstrap 5",
+  "description": "Form Rendering Engine using Angular 20+ and Bootstrap 5",
   "repository": {
     "type": "git",
     "url": ""

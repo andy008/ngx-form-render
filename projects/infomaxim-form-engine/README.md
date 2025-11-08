@@ -7,7 +7,7 @@ Multiple columns.
 Multiple sections.
 
 ## Rendering
-Added ^Angular 14.0.0 dependency
+Added ^Angular 20.0.0 dependency
 
 ## Input
 JSON object defining columns, section and fields.
@@ -31,7 +31,7 @@ Check form validation; if valid the form values are emitted. See HTML form examp
 Returns JSON from form submit ready for posting or further processing.
 
 ## Dependencies
-^Angular 14
+^Angular 20
 Bootstrap 5
 
 ## Coming soon
