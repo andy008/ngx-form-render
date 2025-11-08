@@ -1,6 +1,6 @@
 # Infomaxim Form Engine (netAmbition)
 
-Easy Angular Reactive Form rendering from a JSON definition using the Bootstrap 4 design framework.
+Easy Angular Reactive Form rendering from a JSON definition using the Bootstrap 5 design framework.
 
 Wide range of form controls.
 Multiple columns.
