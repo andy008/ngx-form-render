@@ -19,6 +19,7 @@
     "enableResourceInlining": true,
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
+    "compilationMode": "partial"
   },
   "exclude": [
     "src/test.ts",
