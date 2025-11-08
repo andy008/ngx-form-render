@@ -127,3 +127,26 @@ Example component inclusion:-
 <infomaxim-form-engine [formConfig]="formConfig" (formData)="receiveData($event)"></infomaxim-form-engine>
 ```
 
+## Development
+
+This project contains an Angular library (`infomaxim6-form-engine`) and a demo application.
+
+### Building the Library
+
+To build the library for publishing:
+
+```bash
+npm run build:lib
+```
+
+### Publishing to npm
+
+For detailed instructions on how to deploy the library to npm, see [NPM_DEPLOYMENT.md](NPM_DEPLOYMENT.md).
+
+Quick summary:
+1. Update version in `projects/infomaxim-form-engine/package.json`
+2. Build: `npm run build:lib`
+3. Test: `npm run publish:lib:dry-run`
+4. Publish: `npm run publish:lib`
+
+

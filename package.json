@@ -6,9 +6,12 @@
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
+    "build:lib": "ng build infomaxim6-form-engine",
     "test": "ng test",
     "lint": "ng lint",
-    "e2e": "ng e2e"
+    "e2e": "ng e2e",
+    "publish:lib": "cd dist/infomaxim-form-engine && npm publish",
+    "publish:lib:dry-run": "cd dist/infomaxim-form-engine && npm publish --dry-run"
   },
   "repository": {
     "type": "git",
