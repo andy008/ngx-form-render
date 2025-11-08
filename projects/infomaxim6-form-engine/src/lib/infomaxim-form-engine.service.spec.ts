@@ -1,6 +1,6 @@
 import { TestBed } from '@angular/core/testing';
 
-import { InfomaximFormEngineService } from './infomaxim6-form-engine.service';
+import { InfomaximFormEngineService } from './infomaxim-form-engine.service';
 
 describe('InfomaximFormEngineService', () => {
   let service: InfomaximFormEngineService;

@@ -1,7 +1,7 @@
 import { Component, OnInit, Input, Output, EventEmitter, ViewChild } from '@angular/core';
 
 @Component({
-    selector: 'infomaxim6-form-engine',
+    selector: 'infomaxim-form-engine',
     template: `
     <lib-form-engine #libFE [formConfig]="formConfig" (sendFormData)="sendFormDataBack($event)"></lib-form-engine>
   `,

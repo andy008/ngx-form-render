@@ -1,6 +1,6 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { InfomaximFormEngineComponent } from './infomaxim6-form-engine.component';
+import { InfomaximFormEngineComponent } from './infomaxim-form-engine.component';
 
 describe('InfomaximFormEngineComponent', () => {
   let component: InfomaximFormEngineComponent;
